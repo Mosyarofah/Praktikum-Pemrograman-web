@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Mahasiswa Baru</title>
+</head>
+<body style="font-family: Arial, sans-serif; background: #f0f4f8; margin: 0; padding: 30px;">
+
+    <div style="max-width: 750px; margin: 0 auto; background: white; padding: 35px 40px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+
+        <div style="display: flex; align-items: center; gap: 15px; border-bottom: 3px solid #1a3c5e; padding-bottom: 15px; margin-bottom: 25px;">
+            <img src="logo.png" alt="Logo Kampus" width="50" height="50" style="border-radius: 10px;">
+            <h1 style="color: #1a3c5e; margin: 0; font-size: 24px;">Formulir Pendaftaran Mahasiswa Baru</h1>
+        </div>
+
+        <form action="#" method="post">
+
+            <fieldset style="border: 2px solid #d0dce7; border-radius: 12px; padding: 20px 25px; margin-bottom: 20px; background: #fafcfe;">
+                <legend style="font-weight: bold; font-size: 17px; color: #1a3c5e; padding: 0 12px;">Data Pribadi</legend>
+
+                <div style="margin-bottom: 12px;">
+                    <label for="nama" style="display: inline-block; width: 130px; font-weight: 600;">Nama <span style="color: red;">*</span></label>
+                    <input type="text" id="nama" name="namaLengkap" placeholder="contoh: Mosyarofah" required style="padding: 8px 14px; border: 1px solid #b8c9dd; border-radius: 20px; width: 350px;">
+                </div>
+
+                <div style="margin-bottom: 12px;">
+                    <label for="email" style="display: inline-block; width: 130px; font-weight: 600;">Email <span style="color: red;">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="contoh: Musya@email.com" required style="padding: 8px 14px; border: 1px solid #b8c9dd; border-radius: 20px; width: 350px;">
+                </div>
+
+                <div>
+                    <label style="display: inline-block; width: 130px; font-weight: 600;">Jenis Kelamin <span style="color: red;">*</span></label>
+                    <label><input type="radio" name="jenisKelamin" value="Pria" required> Pria</label>
+                    <label style="margin-left: 20px;"><input type="radio" name="jenisKelamin" value="Wanita" required> Wanita</label>
+                </div>
+            </fieldset>
+
+            <fieldset style="border: 2px solid #d0dce7; border-radius: 12px; padding: 20px 25px; margin-bottom: 20px; background: #fafcfe;">
+                <legend style="font-weight: bold; font-size: 17px; color: #1a3c5e; padding: 0 12px;">Hobi & Jurusan</legend>
+
+                <div style="margin-bottom: 15px;">
+                    <label style="display: inline-block; width: 130px; font-weight: 600; vertical-align: top;">Hobi <span style="color: red;">*</span></label>
+                    <div style="display: inline-block;">
+                        <label><input type="checkbox" name="hobi" value="Membaca"> Membaca</label>
+                        <label style="margin-left: 20px;"><input type="checkbox" name="hobi" value="Olahraga"> Olahraga</label>
+                        <label style="margin-left: 20px;"><input type="checkbox" name="hobi" value="Musik"> Musik</label>
+                        <br>
+                        <label><input type="checkbox" name="hobi" value="Traveling"> Traveling</label>
+                        <label style="margin-left: 20px;"><input type="checkbox" name="hobi" value="Gaming"> Gaming</label>
+                        <br>
+                        <span style="font-size: 12px; color: #888;">(pilih minimal 2)</span>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="jurusan" style="display: inline-block; width: 130px; font-weight: 600;">Jurusan <span style="color: red;">*</span></label>
+                    <select id="jurusan" name="jurusan" required style="padding: 8px 14px; border: 1px solid #b8c9dd; border-radius: 20px; width: 250px;">
+                        <option value="">-- Pilih Jurusan --</option>
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Manajemen">Manajemen</option>
+                        <option value="Akuntansi">Akuntansi</option>
+                        <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset style="border: 2px solid #d0dce7; border-radius: 12px; padding: 20px 25px; margin-bottom: 25px; background: #fafcfe;">
+                <legend style="font-weight: bold; font-size: 17px; color: #1a3c5e; padding: 0 12px;">Alamat</legend>
+                <div>
+                    <label for="alamat" style="display: inline-block; width: 130px; font-weight: 600; vertical-align: top;">Alamat</label>
+                    <textarea id="alamat" name="alamat" placeholder="Jalan, RT/RW, Kelurahan, Kecamatan, Kota" rows="3" cols="40" style="padding: 10px 14px; border: 1px solid #b8c9dd; border-radius: 12px; font-family: Arial;"></textarea>
+                    <br>
+                    <span style="margin-left: 135px; font-size: 12px; color: #888;">(opsional)</span>
+                </div>
+            </fieldset>
+
+            <div style="text-align: center;">
+                <input type="submit" value="Daftar Sekarang" style="background: #1a3c5e; color: white; border: none; padding: 14px 50px; font-size: 17px; font-weight: bold; border-radius: 40px; cursor: pointer; width: 100%;">
+            </div>
+
+        </form>
+
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e0e8f0; text-align: center;">
+            <a href="#" style="color: #1a3c5e; text-decoration: none; font-weight: 500; margin: 0 10px;">Informasi Kampus</a>
+            <span style="color: #b0c4d8;">|</span>
+            <a href="#" style="color: #1a3c5e; text-decoration: none; font-weight: 500; margin: 0 10px;">Panduan Pendaftaran</a>
+            <span style="color: #b0c4d8;">|</span>
+            <a href="#" style="color: #1a3c5e; text-decoration: none; font-weight: 500; margin: 0 10px;">Kontak</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
